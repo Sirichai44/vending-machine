@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+  --background-color: #f4f4f5;
+  --background-notify-color: #d4d4d8;
+  --text-color: #18181b;
+  --text-error-color: #f87171;
+  --text-carousol-color: #a1a1aa;
+}
+
+body {
+  @apply text-base w-full min-h-[100svh] bg-zinc-100 dark:bg-zinc-900 text-primary-light dark:text-primary-dark;
+}
+
+#root {
+  @apply box-border relative w-full min-h-full font-comfortaa;
+}
+
+html.dark {
+  --background-color: #18181b;
+  --background-notify-color: #d4d4d8;
+  --text-carousol-color: #d4d4d8;
+  --text-color: #f4f4f5;
+  --text-error-color: #dc2626;
+  --text-carousol-color: #d4d4d8;
+  color-scheme: dark;
+  scrollbar-color: hsla(0, 0%, 100%, 0.4) hsla(0, 0%, 100%, 0.029);
+}
+html.light {
+  color-scheme: light;
+}

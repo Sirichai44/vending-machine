@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Chrome, Safari and Opera */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .word-break {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .transition-width {
+    transition-property: width;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.input-focused-highlight-error {
+  --Input-focusedHighlight: var(--text-error-color) !important;
+}
+.input-focused-highlight {
+  --Input-focusedHighlight: #a1a1aa !important;
+}
+
+/* override label */
+.MuiFormLabel-root {
+  /* color: var(--text-color) !important; */
+  font-weight: lighter !important;
+}
